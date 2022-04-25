@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a0d28bb772814be0acb985959a7872be {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a0d28bb772814be0acb985959a7872be" ></div>
+        
+</body>
+<script>    
+    
+            var map_a0d28bb772814be0acb985959a7872be = L.map(
+                "map_a0d28bb772814be0acb985959a7872be",
+                {
+                    center: [37.77717904136104, -122.41537614494942],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_60f7eb26331f42728b958da39d358f32 = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/fentpam/cl2e2hew3000b16o9jhi6m41h/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZmVudHBhbSIsImEiOiJjbDJkdmx3MW0xMmw0M2NvMmZneHgzYWJrIn0.IfJFXjNqxjsNFIYxAKmqbg",
+                {"attribution": "food\u0026drinks", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a0d28bb772814be0acb985959a7872be);
+        
+    
+            var marker_5881d6f0dda548249b370ac678c5e492 = L.marker(
+                [37.77717904136104, -122.41537614494942],
+                {}
+            ).addTo(map_a0d28bb772814be0acb985959a7872be);
+        
+    
+            var icon_bc15779853e747a1b22c26296baf0222 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5881d6f0dda548249b370ac678c5e492.setIcon(icon_bc15779853e747a1b22c26296baf0222);
+        
+    
+            marker_5881d6f0dda548249b370ac678c5e492.bindTooltip(
+                `<div>
+                     AVA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
